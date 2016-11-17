@@ -9,5 +9,5 @@ target 'SocialApps' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
+  pod 'FBSDKLoginKit', '~> 4.17'
 end

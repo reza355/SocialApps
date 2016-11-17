@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		1B12B6D10B4DB34E21C0A396 /* Pods-SocialApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApps/Pods-SocialApps.release.xcconfig"; sourceTree = "<group>"; };
 		4D560539C432BA6ED2AC7008 /* Pods_SocialApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60075E8D1DDDA48F0057C765 /* SocialApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialApps.entitlements; sourceTree = "<group>"; };
 		608D27F21DD9721700285C81 /* SocialApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608D27F51DD9721700285C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		608D27F71DD9721700285C81 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		608D27F41DD9721700285C81 /* SocialApps */ = {
 			isa = PBXGroup;
 			children = (
+				60075E8D1DDDA48F0057C765 /* SocialApps.entitlements */,
 				602F5BD51DD97767006A55BD /* Utility */,
 				602F5BD61DD97771006A55BD /* Asset */,
 				602F5BD21DD97731006A55BD /* Model */,
@@ -183,6 +185,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7UJJ655T8G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -399,6 +406,7 @@
 			baseConfigurationReference = 7426EA5B8F82F4FA927C8A55 /* Pods-SocialApps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialApps/SocialApps.entitlements;
 				DEVELOPMENT_TEAM = 7UJJ655T8G;
 				INFOPLIST_FILE = SocialApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,6 +421,7 @@
 			baseConfigurationReference = 1B12B6D10B4DB34E21C0A396 /* Pods-SocialApps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SocialApps/SocialApps.entitlements;
 				DEVELOPMENT_TEAM = 7UJJ655T8G;
 				INFOPLIST_FILE = SocialApps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

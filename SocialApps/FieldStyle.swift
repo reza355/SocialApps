@@ -18,11 +18,4 @@ class FieldStyle: UITextField {
         self.layer.cornerRadius = 2.0
         self.clipsToBounds = true
     }
-    
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return self.bounds.insetBy(dx: 10, dy: 5)
-    }
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return self.bounds.insetBy(dx: 10, dy: 5)
-    }
 }
