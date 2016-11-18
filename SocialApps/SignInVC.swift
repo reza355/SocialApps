@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     @IBOutlet weak var emailField: FieldStyle!
@@ -18,6 +19,14 @@ class SignInVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if let keyCheck = KeychainWrapper.standard.string(forKey: KEY_UID){
+            performSegue(withIdentifier: "FeedVC", sender: self)
+        }
+    }
+    
     @IBAction func facebookLoginOnPressed(_ sender: Any) {
         let facebookLogin = FBSDKLoginManager()
         
@@ -40,6 +49,9 @@ class SignInVC: UIViewController {
                 print("ini: unable authenticate firebase - \(error)")
             }else{
                 print("ini: firebase auth success")
+                if let user = user{
+                    self.completeSignIn(token: user.uid)
+                }
             }
         })
     }
@@ -48,17 +60,31 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pass, completion: {(user, error) in
                 if error ==  nil{
                     print("ini: email authenticate with firebase")
+                    print("ini: firebase auth success")
+                    if let user = user{
+                        self.completeSignIn(token: user.uid)
+                    }
                 }else{
                     FIRAuth.auth()?.createUser(withEmail: email, password: pass, completion: {(user, error) in
                         if error != nil{
                             print("ini: unable authenticate firebase - \(error)")
                         }else{
                             print("ini: firebase email auth success")
+                            print("ini: firebase auth success")
+                            if let user = user{
+                                self.completeSignIn(token: user.uid)
+                            }
                         }
                     })
                 }
             })
         }
+    }
+    
+    func completeSignIn(token: String){
+        let keychainResult = KeychainWrapper.standard.set(token, forKey: KEY_UID)
+        print("ini: keychain saved to \(keychainResult)")
+        performSegue(withIdentifier: "FeedVC", sender: self)
     }
 }
 

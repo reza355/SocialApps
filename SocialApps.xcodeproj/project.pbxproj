@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604A4F421DDF0F5B00005CBD /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A4F411DDF0F5B00005CBD /* FeedVC.swift */; };
 		608D27F61DD9721700285C81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D27F51DD9721700285C81 /* AppDelegate.swift */; };
 		608D27F81DD9721700285C81 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608D27F71DD9721700285C81 /* SignInVC.swift */; };
 		608D27FB1DD9721700285C81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608D27F91DD9721700285C81 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		1B12B6D10B4DB34E21C0A396 /* Pods-SocialApps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApps.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApps/Pods-SocialApps.release.xcconfig"; sourceTree = "<group>"; };
 		4D560539C432BA6ED2AC7008 /* Pods_SocialApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60075E8D1DDDA48F0057C765 /* SocialApps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialApps.entitlements; sourceTree = "<group>"; };
+		604A4F411DDF0F5B00005CBD /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		608D27F21DD9721700285C81 /* SocialApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		608D27F51DD9721700285C81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		608D27F71DD9721700285C81 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		602F5BD41DD97759006A55BD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				604A4F411DDF0F5B00005CBD /* FeedVC.swift */,
 				608D27F71DD9721700285C81 /* SignInVC.swift */,
 			);
 			name = Controller;
@@ -101,6 +104,7 @@
 		602F5BD51DD97767006A55BD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				60075E8D1DDDA48F0057C765 /* SocialApps.entitlements */,
 				60D54E211DDD747D00DFC4A0 /* Constant.swift */,
 				608D27F51DD9721700285C81 /* AppDelegate.swift */,
 				608D28071DD9723E00285C81 /* GoogleService-Info.plist */,
@@ -138,7 +142,6 @@
 		608D27F41DD9721700285C81 /* SocialApps */ = {
 			isa = PBXGroup;
 			children = (
-				60075E8D1DDDA48F0057C765 /* SocialApps.entitlements */,
 				602F5BD51DD97767006A55BD /* Utility */,
 				602F5BD61DD97771006A55BD /* Asset */,
 				602F5BD21DD97731006A55BD /* Model */,
@@ -282,6 +285,7 @@
 				60D54E201DDD740700DFC4A0 /* ShadowView.swift in Sources */,
 				60D54E241DDD77DF00DFC4A0 /* RoundButton.swift in Sources */,
 				608D27F81DD9721700285C81 /* SignInVC.swift in Sources */,
+				604A4F421DDF0F5B00005CBD /* FeedVC.swift in Sources */,
 				60D54E281DDD7C8B00DFC4A0 /* SimpleRoundedBtn.swift in Sources */,
 				608D27F61DD9721700285C81 /* AppDelegate.swift in Sources */,
 				60D54E221DDD747D00DFC4A0 /* Constant.swift in Sources */,

@@ -10,4 +10,5 @@ target 'SocialApps' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit', '~> 4.17'
+  pod 'SwiftKeychainWrapper', '~> 3.0'
 end
