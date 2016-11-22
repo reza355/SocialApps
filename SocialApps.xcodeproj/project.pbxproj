@@ -15,6 +15,7 @@
 		608D28001DD9721700285C81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608D27FE1DD9721700285C81 /* LaunchScreen.storyboard */; };
 		608D28081DD9723E00285C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 608D28071DD9723E00285C81 /* GoogleService-Info.plist */; };
 		60A341E51DE423D400130EC9 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A341E41DE423D400130EC9 /* CircleImageView.swift */; };
+		60A341E71DE4330100130EC9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A341E61DE4330100130EC9 /* FeedCell.swift */; };
 		60D54E201DDD740700DFC4A0 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D54E1F1DDD740700DFC4A0 /* ShadowView.swift */; };
 		60D54E221DDD747D00DFC4A0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D54E211DDD747D00DFC4A0 /* Constant.swift */; };
 		60D54E241DDD77DF00DFC4A0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D54E231DDD77DF00DFC4A0 /* RoundButton.swift */; };
@@ -37,6 +38,7 @@
 		608D28011DD9721700285C81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		608D28071DD9723E00285C81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		60A341E41DE423D400130EC9 /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		60A341E61DE4330100130EC9 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		60D54E1F1DDD740700DFC4A0 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		60D54E211DDD747D00DFC4A0 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		60D54E231DDD77DF00DFC4A0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				60D54E251DDD7B4400DFC4A0 /* FieldStyle.swift */,
 				60D54E271DDD7C8B00DFC4A0 /* SimpleRoundedBtn.swift */,
 				60A341E41DE423D400130EC9 /* CircleImageView.swift */,
+				60A341E61DE4330100130EC9 /* FeedCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D54E261DDD7B4400DFC4A0 /* FieldStyle.swift in Sources */,
+				60A341E71DE4330100130EC9 /* FeedCell.swift in Sources */,
 				60A341E51DE423D400130EC9 /* CircleImageView.swift in Sources */,
 				60D54E201DDD740700DFC4A0 /* ShadowView.swift in Sources */,
 				60D54E241DDD77DF00DFC4A0 /* RoundButton.swift in Sources */,
